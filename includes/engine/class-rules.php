@@ -91,7 +91,7 @@ final class Rules {
 		);
 	}
 
-	/** Always-open rules (every day, all day). Used for resources without their own rules. */
+	/** Always-open rules (every day, all day). */
 	public static function always(): array {
 		return array(
 			'weekly'    => array_fill( 1, 7, array( array( 0, self::DAY_MINUTES ) ) ),

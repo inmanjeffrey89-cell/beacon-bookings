@@ -13,7 +13,7 @@ final class Product extends \WC_Product {
 
 	const TYPE = 'beacon_bookable';
 
-	/** Meta keys we own, with defaults (used by the admin form and uninstall). */
+	/** Meta keys we own, with defaults (used by the admin form). */
 	const META = array(
 		'_beacon_bookings_unit'             => 'hour',
 		'_beacon_bookings_duration'         => 1,
