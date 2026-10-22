@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "beacon-bookings/calendar",
+	"version": "0.1.0",
+	"title": "Booking Calendar",
+	"category": "widgets",
+	"icon": "calendar-alt",
+	"description": "A month view showing which bookable products are available on each day. Click a day to book.",
+	"keywords": [ "booking", "calendar", "availability", "woocommerce" ],
+	"textdomain": "beacon-bookings",
+	"attributes": {
+		"products": { "type": "string", "default": "" },
+		"months": { "type": "number", "default": 1 }
+	},
+	"supports": { "html": false, "align": [ "wide", "full" ] },
+	"editorScript": "file:./editor.js"
+}

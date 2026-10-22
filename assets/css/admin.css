@@ -1,0 +1,35 @@
+/* Beacon Bookings — admin styles */
+.bkb-rules h4 { margin: 1em 12px .3em; }
+.bkb-rules .description { margin: 0 12px .5em; display: block; }
+.bkb-rules .bkb-repeater { margin: 0 12px; width: calc(100% - 24px); }
+.bkb-rules .bkb-repeater td, .bkb-rules .bkb-repeater th { vertical-align: middle; }
+.bkb-rules p { margin: .5em 12px; }
+.bkb-panel-intro { margin: 8px 12px 4px; }
+.bkb-status { display: inline-block; padding: 2px 8px; border-radius: 3px; background: #f0f0f1; font-size: 12px; line-height: 1.6; white-space: nowrap; }
+.bkb-status-paid, .bkb-status-confirmed { background: #d4f4dd; color: #0f5132; }
+.bkb-status-pending { background: #fff4d6; color: #7a4d00; }
+.bkb-status-unpaid, .bkb-status-hold { background: #e5e5e5; color: #333; }
+.bkb-status-complete { background: #e2e8f0; color: #1f2937; }
+.bkb-status-cancelled { background: #fde2e2; color: #842029; }
+.bkb-order-item { margin-top: 4px; font-size: 12px; }
+/* admin calendar */
+.bkb-admin-cal-head { display: flex; align-items: center; gap: 12px; margin: 12px 0; }
+.bkb-admin-cal-head h2 { margin: 0; }
+.bkb-admin-cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; background: #fff; border: 1px solid #c3c4c7; padding: 6px; }
+.bkb-admin-cal .bkb-wd { font-weight: 600; text-align: center; padding: 4px 0; }
+.bkb-admin-cal .bkb-cell { min-height: 92px; border: 1px solid #e0e0e0; padding: 4px; font-size: 12px; background: #fafafa; }
+.bkb-admin-cal .bkb-cell.bkb-other { opacity: .45; }
+.bkb-admin-cal .bkb-cell.bkb-today { background: #fffbe6; }
+.bkb-admin-cal .bkb-cell .bkb-num { font-weight: 600; display: block; margin-bottom: 2px; }
+.bkb-admin-cal .bkb-cell .bkb-num a { text-decoration: none; }
+.bkb-admin-cal .bkb-ev { display: block; border-left: 3px solid #2271b1; padding: 1px 4px; margin: 2px 0; background: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-decoration: none; color: #1d2327; }
+.bkb-admin-cal .bkb-ev.bkb-ev-pending { border-color: #dba617; }
+.bkb-admin-cal .bkb-ev.bkb-ev-unpaid { border-color: #8c8f94; }
+.bkb-admin-cal .bkb-ev.bkb-ev-cancelled { border-color: #d63638; opacity: .6; text-decoration: line-through; }
+.bkb-admin-cal .bkb-ev.bkb-ev-complete { border-color: #646970; }
+.bkb-day-list .bkb-ev { display: block; }
+.bkb-stats { display: flex; gap: 12px; flex-wrap: wrap; margin: 12px 0; }
+.bkb-stat { background: #fff; border: 1px solid #c3c4c7; padding: 10px 14px; min-width: 140px; }
+.bkb-stat strong { display: block; font-size: 20px; }
+.bkb-filters { margin: 8px 0; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.column-when { width: 22%; } .column-status { width: 12%; } .column-persons { width: 7%; }

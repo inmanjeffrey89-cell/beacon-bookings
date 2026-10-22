@@ -1,0 +1,42 @@
+/* Beacon Bookings — inherits the theme's fonts and colours; only structure is set here. */
+.bkb-form { max-width: 34rem; }
+.bkb-controls { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+.bkb-control { display: flex; flex-direction: column; gap: .25rem; font-size: .95em; }
+.bkb-control select, .bkb-control input { min-width: 8rem; }
+/* Block themes leave form fields bare: give them a comfortable size in the theme's own colours (classic themes restyle these anyway). */
+.bkb-control input[type="number"], .bkb-control select { box-sizing: border-box; min-height: 2.75rem; padding: .45rem .7rem; border: 1px solid rgba(127,127,127,.55); border-radius: 6px; background: transparent; color: inherit; font: inherit; }
+.bkb-control input[type="number"] { width: 8rem; }
+.bkb-form .bkb-submit { margin-top: .25rem; min-width: 12rem; }
+.bkb-note { opacity: .75; margin: .5rem 0; }
+.bkb-error { color: #b32d2e; opacity: 1; }
+.bkb-cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .5rem; }
+.bkb-cal-title { font-weight: 600; }
+.bkb-nav { background: none; border: 1px solid currentColor; color: inherit; border-radius: 4px; width: 2.2rem; height: 2.2rem; line-height: 1; cursor: pointer; padding: 0; font-size: 1.2em; }
+.bkb-nav:disabled { opacity: .3; cursor: default; }
+.bkb-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.bkb-wd { text-align: center; font-size: .8em; opacity: .7; padding: .25rem 0; }
+.bkb-day { position: relative; aspect-ratio: 1 / 1; min-height: 2.4rem; border: 1px solid transparent; border-radius: 6px; background: rgba(127,127,127,.12); color: inherit; font: inherit; cursor: pointer; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.bkb-day.bkb-empty { background: none; cursor: default; }
+.bkb-day.bkb-available { background: rgba(127,127,127,.12); border-color: rgba(127,127,127,.35); font-weight: 600; }
+.bkb-day.bkb-unavailable { opacity: .35; cursor: default; text-decoration: line-through; }
+.bkb-day.bkb-today { box-shadow: inset 0 0 0 1px currentColor; }
+.bkb-day.bkb-selected, .bkb-slot.bkb-selected { outline: 2px solid currentColor; outline-offset: -2px; font-weight: 700; }
+.bkb-day:focus-visible, .bkb-slot:focus-visible, .bkb-nav:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.bkb-left { font-size: .65em; font-weight: 400; opacity: .8; line-height: 1; }
+.bkb-slots { margin: 1rem 0; }
+.bkb-slot-list { display: flex; flex-wrap: wrap; gap: .5rem; }
+.bkb-slot { border: 1px solid rgba(127,127,127,.5); background: none; color: inherit; font: inherit; border-radius: 6px; padding: .4rem .7rem; cursor: pointer; display: inline-flex; gap: .4rem; align-items: baseline; }
+.bkb-slot.bkb-unavailable { opacity: .35; cursor: default; text-decoration: line-through; }
+.bkb-summary { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; margin: 1rem 0; min-height: 1.5em; }
+.bkb-total-value { font-weight: 700; }
+.bkb-submit:disabled { opacity: .5; cursor: not-allowed; }
+.bkb-qty { display: inline-block; min-width: 2em; text-align: center; }
+/* multi-product calendar (shortcode / block) */
+.bkb-multi { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; max-width: 48rem; }
+.bkb-multi .bkb-day { aspect-ratio: auto; min-height: 4.5rem; align-items: flex-start; justify-content: flex-start; padding: .3rem; cursor: default; }
+.bkb-multi .bkb-dots { display: flex; flex-direction: column; gap: 2px; width: 100%; margin-top: .2rem; }
+.bkb-multi .bkb-dot { font-size: .7em; line-height: 1.2; text-decoration: none; color: inherit; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 3px solid currentColor; padding-left: .3rem; }
+.bkb-multi .bkb-dot.bkb-full { opacity: .4; border-left-style: dotted; }
+.bkb-multi-head { display: flex; align-items: center; justify-content: space-between; max-width: 48rem; margin-bottom: .5rem; }
+.bkb-multi-head a { text-decoration: none; }
+@media (max-width: 480px) { .bkb-multi .bkb-day { min-height: 3.2rem; } .bkb-multi .bkb-dot { font-size: .6em; } }
